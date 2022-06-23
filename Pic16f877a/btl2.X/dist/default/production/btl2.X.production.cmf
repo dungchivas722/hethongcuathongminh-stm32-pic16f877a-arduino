@@ -1,0 +1,805 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\btl2.X.production.o
+cinit CODE 0 F F 17 2
+text1 CODE 0 7F1 7F1 C 2
+text2 CODE 0 CFD CFD DD 2
+text3 CODE 0 754 754 9D 2
+text4 CODE 0 B56 B56 12 2
+text5 CODE 0 BBE BBE 25 2
+text6 CODE 0 C0E C0E 39 2
+text7 CODE 0 C47 C47 58 2
+text8 CODE 0 C9F C9F 5E 2
+text9 CODE 0 B68 B68 1A 2
+text10 CODE 0 B9D B9D 21 2
+text11 CODE 0 BE3 BE3 2B 2
+text12 CODE 0 B4D B4D 9 2
+text13 CODE 0 B82 B82 1B 2
+maintext CODE 0 DDA DDA 226 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 20 20 40 1
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 60 60 E 1
+bssBANK1 BANK1 1 A0 A0 A 1
+strings STRING 0 800 800 70 2
+clrtext CODE 0 B45 B45 8 2
+bssCOMMON COMMON 1 7A 7A 2 1
+config CONFIG 4 2007 2007 1 2
+maintext_split_1 CODE 0 26 26 72E 2
+$C:\Users\dungc\AppData\Local\Temp\skscxb.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6E-6F 1
+RAM AA-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 6E-6F 1
+BANK1 AA-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 7FD-7FF 2
+CONST 870-B44 2
+CONST 1000-1FFF 2
+ENTRY 3-3 2
+ENTRY 7FD-7FF 2
+ENTRY 870-B44 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 7FD-7FF 2
+CODE 870-B44 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7C-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 7FD-7FF 2
+STRCODE 870-B44 2
+STRCODE 1000-1FFF 2
+STRING 3-3 2
+STRING 7FD-7FF 2
+STRING 870-B44 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\btl2.X.production.o
+F cinit CODE >1124:C:\Users\dungc\AppData\Local\Temp\skscx.s
+F cinit CODE >1127:C:\Users\dungc\AppData\Local\Temp\skscx.s
+F cinit CODE >1180:C:\Users\dungc\AppData\Local\Temp\skscx.s
+10 cinit CODE >1181:C:\Users\dungc\AppData\Local\Temp\skscx.s
+11 cinit CODE >1184:C:\Users\dungc\AppData\Local\Temp\skscx.s
+12 cinit CODE >1185:C:\Users\dungc\AppData\Local\Temp\skscx.s
+13 cinit CODE >1186:C:\Users\dungc\AppData\Local\Temp\skscx.s
+14 cinit CODE >1187:C:\Users\dungc\AppData\Local\Temp\skscx.s
+15 cinit CODE >1188:C:\Users\dungc\AppData\Local\Temp\skscx.s
+1A cinit CODE >1191:C:\Users\dungc\AppData\Local\Temp\skscx.s
+1B cinit CODE >1192:C:\Users\dungc\AppData\Local\Temp\skscx.s
+1C cinit CODE >1193:C:\Users\dungc\AppData\Local\Temp\skscx.s
+1D cinit CODE >1194:C:\Users\dungc\AppData\Local\Temp\skscx.s
+22 cinit CODE >1200:C:\Users\dungc\AppData\Local\Temp\skscx.s
+22 cinit CODE >1202:C:\Users\dungc\AppData\Local\Temp\skscx.s
+23 cinit CODE >1203:C:\Users\dungc\AppData\Local\Temp\skscx.s
+4 intentry CODE >322:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+26 maintext_split_1 CODE >86:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+44 maintext_split_1 CODE >87:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+52 maintext_split_1 CODE >88:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+5F maintext_split_1 CODE >90:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+67 maintext_split_1 CODE >91:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+76 maintext_split_1 CODE >95:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+A3 maintext_split_1 CODE >97:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B1 maintext_split_1 CODE >99:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DE maintext_split_1 CODE >101:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+ED maintext_split_1 CODE >102:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F3 maintext_split_1 CODE >103:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F5 maintext_split_1 CODE >104:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F7 maintext_split_1 CODE >105:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F9 maintext_split_1 CODE >106:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+FB maintext_split_1 CODE >107:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+FF maintext_split_1 CODE >108:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+101 maintext_split_1 CODE >109:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+105 maintext_split_1 CODE >110:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+109 maintext_split_1 CODE >111:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+10B maintext_split_1 CODE >112:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+10D maintext_split_1 CODE >113:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+113 maintext_split_1 CODE >114:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+121 maintext_split_1 CODE >117:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+12D maintext_split_1 CODE >118:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+138 maintext_split_1 CODE >119:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+13E maintext_split_1 CODE >120:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+148 maintext_split_1 CODE >121:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+14E maintext_split_1 CODE >122:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+14F maintext_split_1 CODE >123:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+156 maintext_split_1 CODE >124:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+160 maintext_split_1 CODE >125:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+166 maintext_split_1 CODE >126:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+167 maintext_split_1 CODE >127:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+16E maintext_split_1 CODE >128:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+178 maintext_split_1 CODE >129:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+17E maintext_split_1 CODE >130:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+17F maintext_split_1 CODE >131:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+186 maintext_split_1 CODE >132:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+190 maintext_split_1 CODE >133:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+196 maintext_split_1 CODE >134:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+197 maintext_split_1 CODE >135:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+19E maintext_split_1 CODE >136:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1A8 maintext_split_1 CODE >137:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1AE maintext_split_1 CODE >138:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1AF maintext_split_1 CODE >139:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1B6 maintext_split_1 CODE >140:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1C0 maintext_split_1 CODE >141:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1C6 maintext_split_1 CODE >142:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1C7 maintext_split_1 CODE >143:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1CE maintext_split_1 CODE >145:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1D8 maintext_split_1 CODE >146:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1DE maintext_split_1 CODE >148:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1DF maintext_split_1 CODE >149:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1E6 maintext_split_1 CODE >151:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1F0 maintext_split_1 CODE >152:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1F7 maintext_split_1 CODE >154:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+1F7 maintext_split_1 CODE >155:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+203 maintext_split_1 CODE >156:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+209 maintext_split_1 CODE >157:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+211 maintext_split_1 CODE >158:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+21B maintext_split_1 CODE >159:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+221 maintext_split_1 CODE >161:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+229 maintext_split_1 CODE >162:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+233 maintext_split_1 CODE >163:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+239 maintext_split_1 CODE >165:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+242 maintext_split_1 CODE >166:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+24C maintext_split_1 CODE >167:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+252 maintext_split_1 CODE >170:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+25B maintext_split_1 CODE >171:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+265 maintext_split_1 CODE >172:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+26B maintext_split_1 CODE >174:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+27A maintext_split_1 CODE >175:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+27E maintext_split_1 CODE >176:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+27F maintext_split_1 CODE >177:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+28C maintext_split_1 CODE >178:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+290 maintext_split_1 CODE >179:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+291 maintext_split_1 CODE >180:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+29F maintext_split_1 CODE >183:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+2AD maintext_split_1 CODE >186:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+2BB maintext_split_1 CODE >189:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+2C9 maintext_split_1 CODE >192:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+2D7 maintext_split_1 CODE >195:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+2E5 maintext_split_1 CODE >198:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+2F1 maintext_split_1 CODE >200:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+300 maintext_split_1 CODE >201:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+304 maintext_split_1 CODE >202:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+305 maintext_split_1 CODE >203:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+313 maintext_split_1 CODE >208:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+321 maintext_split_1 CODE >213:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+32F maintext_split_1 CODE >219:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+344 maintext_split_1 CODE >220:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+34C maintext_split_1 CODE >221:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+352 maintext_split_1 CODE >223:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+367 maintext_split_1 CODE >224:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+36F maintext_split_1 CODE >225:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+375 maintext_split_1 CODE >227:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+37D maintext_split_1 CODE >229:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+387 maintext_split_1 CODE >230:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+38D maintext_split_1 CODE >231:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+38E maintext_split_1 CODE >234:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+398 maintext_split_1 CODE >235:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+39E maintext_split_1 CODE >237:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3A6 maintext_split_1 CODE >239:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3B0 maintext_split_1 CODE >240:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3B6 maintext_split_1 CODE >241:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3B7 maintext_split_1 CODE >244:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3C1 maintext_split_1 CODE >245:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3C7 maintext_split_1 CODE >247:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3CF maintext_split_1 CODE >249:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3D9 maintext_split_1 CODE >250:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3DF maintext_split_1 CODE >251:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3E0 maintext_split_1 CODE >254:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3EA maintext_split_1 CODE >255:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3F0 maintext_split_1 CODE >257:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+3F8 maintext_split_1 CODE >259:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+402 maintext_split_1 CODE >260:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+408 maintext_split_1 CODE >261:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+409 maintext_split_1 CODE >264:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+413 maintext_split_1 CODE >265:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+419 maintext_split_1 CODE >267:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+430 maintext_split_1 CODE >268:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+434 maintext_split_1 CODE >269:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+436 maintext_split_1 CODE >270:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+43C maintext_split_1 CODE >271:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+43E maintext_split_1 CODE >272:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+444 maintext_split_1 CODE >273:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+453 maintext_split_1 CODE >275:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+46B maintext_split_1 CODE >276:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+47A maintext_split_1 CODE >277:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+480 maintext_split_1 CODE >278:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+482 maintext_split_1 CODE >279:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+488 maintext_split_1 CODE >280:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+48A maintext_split_1 CODE >281:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+490 maintext_split_1 CODE >282:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+49F maintext_split_1 CODE >284:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+4D8 maintext_split_1 CODE >285:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+4E6 maintext_split_1 CODE >286:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+51D maintext_split_1 CODE >287:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+52B maintext_split_1 CODE >288:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+564 maintext_split_1 CODE >289:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+572 maintext_split_1 CODE >290:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+5A9 maintext_split_1 CODE >291:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+5B7 maintext_split_1 CODE >292:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+5F0 maintext_split_1 CODE >293:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+5FE maintext_split_1 CODE >294:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+635 maintext_split_1 CODE >295:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+643 maintext_split_1 CODE >296:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+65B maintext_split_1 CODE >297:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+65D maintext_split_1 CODE >298:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+65F maintext_split_1 CODE >299:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+661 maintext_split_1 CODE >300:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+665 maintext_split_1 CODE >301:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+667 maintext_split_1 CODE >302:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+66D maintext_split_1 CODE >303:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+67B maintext_split_1 CODE >305:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+693 maintext_split_1 CODE >306:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+697 maintext_split_1 CODE >307:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+69B maintext_split_1 CODE >308:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+69F maintext_split_1 CODE >309:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+6A3 maintext_split_1 CODE >310:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+6A5 maintext_split_1 CODE >311:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+6AB maintext_split_1 CODE >312:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+6B9 maintext_split_1 CODE >314:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+6EC maintext_split_1 CODE >315:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+700 maintext_split_1 CODE >316:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+706 maintext_split_1 CODE >317:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+71D maintext_split_1 CODE >318:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B82 text13 CODE >322:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B82 text13 CODE >323:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B86 text13 CODE >325:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B87 text13 CODE >326:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B8D text13 CODE >327:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B94 text13 CODE >329:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B96 text13 CODE >332:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B4D text12 CODE >11:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+B4D text12 CODE >14:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+B51 text12 CODE >16:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+B55 text12 CODE >18:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+BE3 text11 CODE >21:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+BE4 text11 CODE >24:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+BEA text11 CODE >26:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+BF7 text11 CODE >28:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+C00 text11 CODE >30:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+C03 text11 CODE >32:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+C07 text11 CODE >34:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+C0D text11 CODE >36:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Adc.c
+B9D text10 CODE >7:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B9E text10 CODE >9:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BA1 text10 CODE >10:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BA5 text10 CODE >11:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BA7 text10 CODE >12:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BA7 text10 CODE >13:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BA8 text10 CODE >15:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BAC text10 CODE >16:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BAE text10 CODE >17:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BAE text10 CODE >18:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BAF text10 CODE >20:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BB3 text10 CODE >21:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BB5 text10 CODE >22:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BB5 text10 CODE >23:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BB6 text10 CODE >25:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BBA text10 CODE >26:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BBC text10 CODE >27:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BBC text10 CODE >28:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BBD text10 CODE >29:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B68 text9 CODE >30:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B69 text9 CODE >32:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B6C text9 CODE >33:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B72 text9 CODE >34:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B75 text9 CODE >35:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B7E text9 CODE >36:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B81 text9 CODE >37:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C9F text8 CODE >66:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C9F text8 CODE >68:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CA5 text8 CODE >69:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CAE text8 CODE >70:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CB4 text8 CODE >71:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CBD text8 CODE >72:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CC3 text8 CODE >73:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CCC text8 CODE >74:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CD2 text8 CODE >76:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CD8 text8 CODE >77:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CDE text8 CODE >78:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CE4 text8 CODE >79:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CEA text8 CODE >80:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CF0 text8 CODE >81:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CF6 text8 CODE >82:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+CFC text8 CODE >83:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C47 text7 CODE >45:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C4A text7 CODE >48:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C4F text7 CODE >50:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C54 text7 CODE >51:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C60 text7 CODE >52:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C65 text7 CODE >53:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C6B text7 CODE >54:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C73 text7 CODE >55:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C74 text7 CODE >56:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C7A text7 CODE >58:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C7F text7 CODE >59:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C8B text7 CODE >60:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C90 text7 CODE >61:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C96 text7 CODE >62:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C9E text7 CODE >64:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C0E text6 CODE >85:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C0F text6 CODE >88:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C14 text6 CODE >89:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C19 text6 CODE >90:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C1C text6 CODE >91:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C2A text6 CODE >92:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C2D text6 CODE >93:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C32 text6 CODE >94:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C35 text6 CODE >95:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C3B text6 CODE >96:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C3E text6 CODE >97:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C43 text6 CODE >98:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+C46 text6 CODE >99:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BBE text5 CODE >101:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BBF text5 CODE >104:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BC2 text5 CODE >105:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+BE2 text5 CODE >106:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Lcd.c
+B56 text4 CODE >5:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B56 text4 CODE >7:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B57 text4 CODE >8:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B58 text4 CODE >9:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B59 text4 CODE >10:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B5A text4 CODE >12:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B5B text4 CODE >14:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B5F text4 CODE >15:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B62 text4 CODE >16:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B63 text4 CODE >17:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B64 text4 CODE >19:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B65 text4 CODE >20:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B66 text4 CODE >21:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+B67 text4 CODE >22:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Timer.c
+754 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+754 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+757 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+75B text3 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+766 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+768 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+768 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+76C text3 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+777 text3 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+77B text3 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+783 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+78B text3 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+78D text3 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+78E text3 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+797 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+79B text3 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+79F text3 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7A8 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7BA text3 CODE >32:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7C8 text3 CODE >33:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7C9 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7D2 text3 CODE >36:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7D8 text3 CODE >38:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7DD text3 CODE >39:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7E8 text3 CODE >40:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+7F0 text3 CODE >41:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\aldiv.c
+CFD text2 CODE >1:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+CFD text2 CODE >4:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+D58 text2 CODE >5:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+D61 text2 CODE >7:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DBA text2 CODE >8:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DBD text2 CODE >10:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DC7 text2 CODE >12:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DCB text2 CODE >13:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DCC text2 CODE >14:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DCF text2 CODE >15:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DD2 text2 CODE >16:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DD3 text2 CODE >17:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DD6 text2 CODE >18:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DD9 text2 CODE >22:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+7F1 text1 CODE >23:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+7F2 text1 CODE >25:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+7F8 text1 CODE >26:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+7FC text1 CODE >27:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X/Uart.h
+DDA maintext CODE >14:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DDA maintext CODE >16:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DDD maintext CODE >17:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DEC maintext CODE >18:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DF1 maintext CODE >19:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DF4 maintext CODE >20:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DF7 maintext CODE >21:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DFA maintext CODE >22:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+DFF maintext CODE >23:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E04 maintext CODE >24:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E08 maintext CODE >25:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E0A maintext CODE >26:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E18 maintext CODE >28:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E2A maintext CODE >30:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E32 maintext CODE >31:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E38 maintext CODE >32:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E44 maintext CODE >34:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E50 maintext CODE >38:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E6C maintext CODE >40:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E7A maintext CODE >41:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E87 maintext CODE >43:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E8F maintext CODE >44:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+E9E maintext CODE >49:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+EBC maintext CODE >51:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+ECA maintext CODE >52:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+ED7 maintext CODE >54:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+EDF maintext CODE >55:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+EEE maintext CODE >58:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F1B maintext CODE >59:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F29 maintext CODE >60:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F36 maintext CODE >62:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F3E maintext CODE >63:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F4D maintext CODE >67:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F6B maintext CODE >69:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F79 maintext CODE >70:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F86 maintext CODE >72:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F8E maintext CODE >73:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+F9D maintext CODE >77:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+FBB maintext CODE >79:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+FC9 maintext CODE >80:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+FD6 maintext CODE >82:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+FDE maintext CODE >83:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+FED maintext CODE >86:C:\Users\dungc\Desktop\btl1\New\vxl pic\btl2.X\Mainprj2.c
+B45 clrtext CODE >1167:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B45 clrtext CODE >1168:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B46 clrtext CODE >1169:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B46 clrtext CODE >1170:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B47 clrtext CODE >1171:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B48 clrtext CODE >1172:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B49 clrtext CODE >1173:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B4A clrtext CODE >1174:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B4B clrtext CODE >1175:C:\Users\dungc\AppData\Local\Temp\skscx.s
+B4C clrtext CODE >1176:C:\Users\dungc\AppData\Local\Temp\skscx.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\btl2.X.production.o
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 AA 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+_Lcd_Init 193E 0 CODE 0 text8 dist/default/production\btl2.X.production.o
+_Lcd_Port 173A 0 CODE 0 text10 dist/default/production\btl2.X.production.o
+__Lmaintext_split_1 0 0 ABS 0 maintext_split_1 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_Lcd_Init 19FA 0 CODE 0 text8 dist/default/production\btl2.X.production.o
+__end_of_Lcd_Port 177C 0 CODE 0 text10 dist/default/production\btl2.X.production.o
+main@i 42 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@y 3E 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__end_of_TMR0_Unit 16D0 0 CODE 0 text4 dist/default/production\btl2.X.production.o
+_BRGH 4C2 0 ABS 0 - dist/default/production\btl2.X.production.o
+_CREN C4 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RCIF 65 0 ABS 0 - dist/default/production\btl2.X.production.o
+_SPEN C7 0 ABS 0 - dist/default/production\btl2.X.production.o
+_SYNC 4C4 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TRMT 4C1 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TXEN 4C5 0 ABS 0 - dist/default/production\btl2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\dungc\AppData\Local\Temp\skscxb.o
+_freq 6A 0 BANK0 1 bssBANK0 dist/default/production\btl2.X.production.o
+_main 1BB4 0 CODE 0 maintext dist/default/production\btl2.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\btl2.X.production.o
+_Lcd_Write_Char 181C 0 CODE 0 text6 dist/default/production\btl2.X.production.o
+start 18 0 CODE 0 init C:\Users\dungc\AppData\Local\Temp\skscxb.o
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__size_of_TMR0_Unit 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+Lcd_Port@a 72 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+Lcd_Write_Char@temp 74 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\btl2.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_TMR0_Unit 16AC 0 CODE 0 text4 dist/default/production\btl2.X.production.o
+__size_of_ADC_Read 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\dungc\AppData\Local\Temp\skscxb.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\dungc\AppData\Local\Temp\skscxb.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\dungc\AppData\Local\Temp\skscxb.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\dungc\AppData\Local\Temp\skscxb.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\dungc\AppData\Local\Temp\skscxb.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\dungc\AppData\Local\Temp\skscxb.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+___aldiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\btl2.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_UART_Write FE2 0 CODE 0 text1 dist/default/production\btl2.X.production.o
+___aldiv@sign 22 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__size_of_Lcd_Set_Cursor 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_Lcd_Write_Char 188E 0 CODE 0 text6 dist/default/production\btl2.X.production.o
+_ADCON0 1F 0 ABS 0 - dist/default/production\btl2.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\btl2.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\btl2.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\btl2.X.production.o
+UART_Init@baudrate 27 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+_CCPR1L 15 0 ABS 0 - dist/default/production\btl2.X.production.o
+_CCPR2L 1B 0 ABS 0 - dist/default/production\btl2.X.production.o
+main@dem 40 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@len 4A 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_ADC_Read 17C6 0 CODE 0 text11 dist/default/production\btl2.X.production.o
+__end_of___aldiv FE2 0 CODE 0 text3 dist/default/production\btl2.X.production.o
+__end_of_ADC_Read 181C 0 CODE 0 text11 dist/default/production\btl2.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\dungc\AppData\Local\Temp\skscxb.o
+___stacklo 0 0 ABS 0 - C:\Users\dungc\AppData\Local\Temp\skscxb.o
+__end_of_UART_Write FFA 0 CODE 0 text1 dist/default/production\btl2.X.production.o
+Lcd_Set_Cursor@temp 23 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+ADC_Read@channel 76 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\btl2.X.production.o
+UART_Init@x 37 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\btl2.X.production.o
+___aldiv@quotient 23 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+_GO_nDONE FA 0 ABS 0 - dist/default/production\btl2.X.production.o
+_Lcd_Write_String 177C 0 CODE 0 text5 dist/default/production\btl2.X.production.o
+clear_ram0 168A 0 CODE 0 clrtext dist/default/production\btl2.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+_TRISB1 431 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TRISC6 43E 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TRISC7 43F 0 ABS 0 - dist/default/production\btl2.X.production.o
+__size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+main@trangthaim1 50 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@trangthaim2 52 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@trangthaim3 54 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@trangthaim4 4E 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\dungc\AppData\Local\Temp\skscxb.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 4C 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 100A 0 STRING 0 strings dist/default/production\btl2.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_INTCONbits B 0 ABS 0 - dist/default/production\btl2.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+psplit$0 A001A 0 ABS 0 - dist/default/production\btl2.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_ISR 1704 0 CODE 0 text13 dist/default/production\btl2.X.production.o
+_PR2 92 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RD0 40 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RD1 41 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RD2 42 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RD4 44 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RD5 45 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RD6 46 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RD7 47 0 ABS 0 - dist/default/production\btl2.X.production.o
+__S0 1000 0 ABS 0 - -
+__S1 AA 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+?_ADC_Read 72 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\btl2.X.production.o
+__end_of_Lcd_Write_String 17C6 0 CODE 0 text5 dist/default/production\btl2.X.production.o
+__end_of_ISR 173A 0 CODE 0 text13 dist/default/production\btl2.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__size_of_Lcd_Write_String 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__stringtab 1000 0 STRING 0 strings dist/default/production\btl2.X.production.o
+Lcd_Write_String@a 79 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+Lcd_Write_String@i 77 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\dungc\AppData\Local\Temp\skscxb.o
+__end_of_Lcd_Cmd 1704 0 CODE 0 text9 dist/default/production\btl2.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+_ADC_Initialize 169A 0 CODE 0 text12 dist/default/production\btl2.X.production.o
+__size_of_UART_Write 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+main@dongcua 46 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__ptext10 173A 0 CODE 0 text10 dist/default/production\btl2.X.production.o
+__ptext11 17C6 0 CODE 0 text11 dist/default/production\btl2.X.production.o
+__ptext12 169A 0 CODE 0 text12 dist/default/production\btl2.X.production.o
+__ptext13 1704 0 CODE 0 text13 dist/default/production\btl2.X.production.o
+__size_of_Lcd_Write_Char 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+___aldiv EA8 0 CODE 0 text3 dist/default/production\btl2.X.production.o
+_Lcd_Set_Cursor 188E 0 CODE 0 text7 dist/default/production\btl2.X.production.o
+__pmaintext 1BB4 0 CODE 0 maintext dist/default/production\btl2.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+pnum$maintext_split_1 1A 0 ABS 0 - dist/default/production\btl2.X.production.o
+main@phai 5C 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@trai 44 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@joy_X 56 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@joy_Y 58 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@mocua 48 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+main@xuong 4C 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__end_of__stringtab 100C 0 STRING 0 strings dist/default/production\btl2.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\btl2.X.production.o
+__end_of_ADC_Initialize 16AC 0 CODE 0 text12 dist/default/production\btl2.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 44 0 CODE 0 cinit dist/default/production\btl2.X.production.o
+__end_of_Lcd_Set_Cursor 193E 0 CODE 0 text7 dist/default/production\btl2.X.production.o
+__Hmaintext_split_1 0 0 ABS 0 maintext_split_1 -
+__Hintentry 18 0 CODE 0 intentry -
+Lcd_Set_Cursor@a 20 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+Lcd_Set_Cursor@b 76 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+Lcd_Set_Cursor@y 22 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+Lcd_Set_Cursor@z 21 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___aldiv 72 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_UART_Init 1BB4 0 CODE 0 text2 dist/default/production\btl2.X.production.o
+__size_of_UART_Init 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__ptext1 FE2 0 CODE 0 text1 dist/default/production\btl2.X.production.o
+__ptext2 19FA 0 CODE 0 text2 dist/default/production\btl2.X.production.o
+__ptext3 EA8 0 CODE 0 text3 dist/default/production\btl2.X.production.o
+__ptext4 16AC 0 CODE 0 text4 dist/default/production\btl2.X.production.o
+__ptext5 177C 0 CODE 0 text5 dist/default/production\btl2.X.production.o
+__ptext6 181C 0 CODE 0 text6 dist/default/production\btl2.X.production.o
+__ptext7 188E 0 CODE 0 text7 dist/default/production\btl2.X.production.o
+__ptext8 193E 0 CODE 0 text8 dist/default/production\btl2.X.production.o
+__ptext9 16D0 0 CODE 0 text9 dist/default/production\btl2.X.production.o
+___aldiv@dividend 76 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+UART_Write@data 72 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_UART_Init 19FA 0 CODE 0 text2 dist/default/production\btl2.X.production.o
+__end_of__initialization 44 0 CODE 0 cinit dist/default/production\btl2.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+Lcd_Cmd@a 75 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+__size_of_Lcd_Init 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__size_of_Lcd_Port 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+___aldiv@counter 21 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__end_of_main EA8 0 CODE 0 maintext_split_1 dist/default/production\btl2.X.production.o
+_CCP2CONbits 1D 0 ABS 0 - dist/default/production\btl2.X.production.o
+_CCP1X BD 0 ABS 0 - dist/default/production\btl2.X.production.o
+_CCP1Y BC 0 ABS 0 - dist/default/production\btl2.X.production.o
+_CCP2X ED 0 ABS 0 - dist/default/production\btl2.X.production.o
+_CCP2Y EC 0 ABS 0 - dist/default/production\btl2.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\btl2.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\btl2.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\btl2.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\btl2.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_count 7A 0 COMMON 1 bssCOMMON dist/default/production\btl2.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\btl2.X.production.o
+main@trangthai 5A 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\btl2.X.production.o
+_Lcd_Cmd 16D0 0 CODE 0 text9 dist/default/production\btl2.X.production.o
+__size_of_ISR 0 0 ABS 0 - dist/default/production\btl2.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\btl2.X.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\btl2.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\btl2.X.production.o
+_T2CONbits 12 0 ABS 0 - dist/default/production\btl2.X.production.o
+__pstrings 1000 0 STRING 0 strings dist/default/production\btl2.X.production.o
+_CCP1CONbits 17 0 ABS 0 - dist/default/production\btl2.X.production.o
+main@tinhnang 5E 0 BANK0 1 cstackBANK0 dist/default/production\btl2.X.production.o
+pnum$maintext A 0 ABS 0 - dist/default/production\btl2.X.production.o
+Lcd_Write_Char@a 76 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+Lcd_Write_Char@y 75 0 COMMON 1 cstackCOMMON dist/default/production\btl2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+maintext maintext_split_1
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text2 0 CFD 19FA DD 2
+text4 0 B56 16AC 12 2
+text5 0 BBE 177C 25 2
+text6 0 C0E 181C 39 2
+text7 0 C47 188E 58 2
+text8 0 C9F 193E 5E 2
+text9 0 B68 16D0 1A 2
+text10 0 B9D 173A 21 2
+text11 0 BE3 17C6 2B 2
+text12 0 B4D 169A 9 2
+text13 0 B82 1704 1B 2
+maintext 0 DDA 1BB4 226 2
+cstackCOMMON 1 70 70 C 1
+cstackBANK0 1 20 20 4E 1
+intentry 0 4 8 7F9 2
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 A 1
+strings 0 800 1000 70 2
+clrtext 0 B45 168A 8 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
