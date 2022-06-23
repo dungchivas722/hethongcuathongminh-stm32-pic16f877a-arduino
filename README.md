@@ -1,5 +1,5 @@
 # hethongcuathongminh-stm32-pic16f877a-arduino
-[Bấm vào đây](https://www.youtube.com/watch?v=pdlXQQF5UMQ))
+[Bấm vào đây](https://www.youtube.com/watch?v=pdlXQQF5UMQ)
 ## Các module sử dụng:
 
 1. stm32f4 discovery
