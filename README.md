@@ -1,4 +1,6 @@
 # hethongcuathongminh-stm32-pic16f877a-arduino
+## VIdeo minh họa :
+
 [Bấm vào đây](https://www.youtube.com/watch?v=pdlXQQF5UMQ)
 ## Các module sử dụng:
 
