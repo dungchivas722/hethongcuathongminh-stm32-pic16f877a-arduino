@@ -45,7 +45,7 @@
 +  LCD : RDO - RS, RD2- E , RD4->RD7 - D4->D7
 ### Arduino :
 + 2,3 ứng với Uart vân tay rx,tx
-+ 10,11 ứng vowus Uart stm32 rx,tx
++ 10,11 ứng với Uart stm32 rx,tx
 ### Stm32 :
 + PD2,PC12 ứng với uart lora 2 rx tx
 +  PA0,PA1 ứng với uart arduino rx tx
